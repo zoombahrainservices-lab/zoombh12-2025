@@ -1,0 +1,821 @@
+﻿/* White Papers & Research Page Styles */
+
+/* Hero Section */
+.white-papers-hero-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    padding: 120px 0 80px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.white-papers-hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.white-papers-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.white-papers-hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.white-papers-hero-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.white-papers-hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.white-papers-hero-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.white-papers-hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.white-papers-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    min-width: 220px;
+    justify-content: center;
+}
+
+.white-papers-btn-primary {
+    background: white;
+    color: #1e3a8a;
+    border-color: white;
+}
+
+.white-papers-btn-primary:hover {
+    background: transparent;
+    color: white;
+    border-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.white-papers-btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.white-papers-btn-secondary:hover {
+    background: white;
+    color: #1e3a8a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* Latest Report Section */
+.latest-report-section {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+.latest-report-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.latest-report-card {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.latest-report-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #3b82f6, #1e3a8a);
+}
+
+.latest-report-label {
+    color: #3b82f6;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.latest-report-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.latest-report-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.report-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border-left: 4px solid #3b82f6;
+}
+
+.feature-item i {
+    color: #3b82f6;
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+}
+
+.feature-item span {
+    color: #1e293b;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.download-report-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+    color: white;
+    padding: 18px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.download-report-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
+/* Research Library Section */
+.research-library-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.research-library-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.research-library-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.research-library-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.research-library-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #1e3a8a);
+    border-radius: 2px;
+}
+
+.research-library-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.research-filter-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.research-filter-btn {
+    padding: 12px 24px;
+    border: 2px solid #e2e8f0;
+    background: white;
+    color: #64748b;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.research-filter-btn:hover {
+    border-color: #3b82f6;
+    color: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.research-filter-btn.active {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    color: white;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.research-papers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.research-paper-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.research-paper-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #1e3a8a);
+}
+
+.research-paper-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.paper-category {
+    display: inline-block;
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.paper-quarter {
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.paper-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.paper-description {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.paper-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.paper-format {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.paper-pages {
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.download-paper-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.download-paper-btn:hover {
+    color: #1e3a8a;
+    gap: 12px;
+}
+
+.download-paper-btn::after {
+    content: '→';
+    transition: transform 0.3s ease;
+}
+
+.download-paper-btn:hover::after {
+    transform: translateX(4px);
+}
+
+/* Load More Papers Button */
+.load-more-papers-container {
+    text-align: center;
+}
+
+.load-more-papers-btn {
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.load-more-papers-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
+.load-more-papers-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Custom Research Services Section */
+.custom-research-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.custom-research-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.custom-research-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.custom-research-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.custom-research-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #1e3a8a);
+    border-radius: 2px;
+}
+
+.custom-research-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.custom-research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.custom-research-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-research-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #1e3a8a);
+}
+
+.custom-research-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+}
+
+.service-icon i {
+    color: white;
+    font-size: 32px;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.service-description {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.learn-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    color: #1e3a8a;
+    gap: 12px;
+}
+
+.learn-more-btn::after {
+    content: '→';
+    transition: transform 0.3s ease;
+}
+
+.learn-more-btn:hover::after {
+    transform: translateX(4px);
+}
+
+/* WhatsApp Chat Button - Fixed positioning ensured */
+
+
+
+
+
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .white-papers-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .white-papers-hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .white-papers-hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .white-papers-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .latest-report-card {
+        padding: 30px;
+    }
+    
+    .latest-report-title {
+        font-size: 2rem;
+    }
+    
+    .report-features {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .research-filter-buttons {
+        gap: 10px;
+    }
+    
+    .research-filter-btn {
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+    
+    .research-papers-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .research-paper-card {
+        padding: 25px;
+    }
+    
+    .custom-research-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .custom-research-card {
+        padding: 30px;
+    }
+    
+    
+    
+    
+}
+
+@media (max-width: 480px) {
+    .white-papers-hero-section {
+        padding: 100px 0 60px;
+    }
+    
+    .white-papers-hero-title {
+        font-size: 2rem;
+    }
+    
+    .research-library-title,
+    .custom-research-title {
+        font-size: 2rem;
+    }
+    
+    .latest-report-title {
+        font-size: 1.75rem;
+    }
+    
+    .latest-report-card,
+    .research-paper-card,
+    .custom-research-card {
+        padding: 20px;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .service-icon i {
+        font-size: 24px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .white-papers-hero-section {
+        background: #000;
+    }
+    
+    .white-papers-btn-primary {
+        background: #fff;
+        color: #000;
+        border-color: #000;
+    }
+    
+    .white-papers-btn-secondary {
+        background: #000;
+        color: #fff;
+        border-color: #fff;
+    }
+}
+
+
+
+
+
+
+
+/* Standardized WhatsApp Button - Consistent across all pages */
+.whatsapp-btn,
+.whatsapp-chat,
+.whatsapp-chat-btn,
+[class*="whatsapp"],
+[class*="chat-btn"] {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 999999 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: flex !important;
+    pointer-events: auto !important;
+    transform: none !important;
+    contain: none !important;
+    perspective: none !important;
+    filter: none !important;
+    isolation: auto !important;
+    mix-blend-mode: normal !important;
+    backface-visibility: visible !important;
+    will-change: auto !important;
+    float: none !important;
+    clear: none !important;
+    vertical-align: baseline !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    clip: auto !important;
+    clip-path: none !important;
+    mask: none !important;
+    object-fit: fill !important;
+    object-position: 50% 50% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: auto !important;
+    left: auto !important;
+    width: 55px !important;
+    height: 55px !important;
+    border-radius: 50% !important;
+    background-color: #25D366 !important;
+    color: #fff !important;
+    border: none !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    transition: none !important;
+    font-size: 26px !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.whatsapp-btn:hover,
+.whatsapp-chat:hover,
+.whatsapp-chat-btn:hover,
+[class*="whatsapp"]:hover,
+[class*="chat-btn"]:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+    transform: none !important;
+}
+
+/* Standardized Header - Consistent across all pages */
+.new-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 2147483647 !important;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    overflow: visible;
+    border-bottom: 2px solid #e2e8f0;
+    box-shadow: 0 4px 20px rgba(30, 64, 175, 0.1);
+    backdrop-filter: blur(10px);
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+    transform: none !important;
+    contain: none !important;
+    will-change: auto !important;
+    backface-visibility: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    bottom: auto !important;
+    height: 80px !important;
+    filter: none !important;
+    perspective: none !important;
+}
+

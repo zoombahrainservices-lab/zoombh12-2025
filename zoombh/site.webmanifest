@@ -1,0 +1,41 @@
+{
+    "name": "Zoom Bahrain - Digital Marketing Agency",
+    "short_name": "Zoom Bahrain",
+    "description": "Leading Digital Marketing Agency in Bahrain providing comprehensive business solutions including real estate, marketing, logistics, events management, PR, and consultancy services.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#3b82f6",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "en",
+    "categories": ["business", "marketing", "real-estate"],
+    "icons": [
+        {
+            "src": "/images/zoom-logo-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/zoom-logo-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/images/screenshot-wide.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/images/screenshot-narrow.png",
+            "sizes": "750x1334",
+            "type": "image/png",
+            "form_factor": "narrow"
+        }
+    ]
+}

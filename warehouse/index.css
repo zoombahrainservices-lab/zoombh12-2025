@@ -1,0 +1,793 @@
+/* Warehouse Page Styles */
+
+/* Warehouse Hero Section */
+.warehouse-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.warehouse-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.warehouse-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.warehouse-overlay {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warehouse-content {
+    text-align: center;
+    max-width: 800px;
+    padding: 40px 20px;
+}
+
+.warehouse-logo img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.warehouse-heading h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #014B6F;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.warehouse-subtitle p {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.term-highlight {
+    color: #005B96;
+    font-weight: 600;
+}
+
+
+.industrial-sp-content h2 {
+    font-size: 2.5rem;
+    color: #014B6F;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.industrial-sp-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.industrial-sp-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.industrial-sp-feature {
+    background: #f8f9fa;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+.industrial-sp-feature h3 {
+    font-size: 1.3rem;
+    color: #014B6F;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.industrial-sp-feature p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Warehouse Services Section */
+.warehouse-services {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.warehouse-services-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #005B96, #003d6b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Location Section */
+.location-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.location-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.location-content h2 {
+    color: #014B6F;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.location-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.location-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.location-item h3 {
+    color: #014B6F;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.location-item p {
+    color: #666;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.whatsapp-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.whatsapp-cta:hover {
+    background: #128C7E;
+    color: white;
+}
+
+.location-map {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* Warehouse Features Section */
+.warehouse-features {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.warehouse-features-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.features-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #014B6F;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    padding: 12px 0;
+    font-size: 1.1rem;
+    color: #495057;
+    position: relative;
+    padding-left: 32px;
+}
+
+.features-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.features-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Why Choose Us Section */
+.why-choose-us-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.why-choose-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.why-choose-us-container h2 {
+    font-size: 2.5rem;
+    color: #014B6F;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.why-choose-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.why-choose-us-item {
+    background: #f8f9fa;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.why-choose-us-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us-item h3 {
+    font-size: 1.3rem;
+    color: #014B6F;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.why-choose-us-item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Local SEO Section */
+.local-seo-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.local-seo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.local-seo-container h2 {
+    font-size: 2.5rem;
+    color: #014B6F;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.local-seo-container > p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.local-seo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.local-seo-item {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.local-seo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.local-seo-item h3 {
+    font-size: 1.3rem;
+    color: #014B6F;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.local-seo-item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.local-seo-cta {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.local-seo-cta h3 {
+    font-size: 2rem;
+    color: #014B6F;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.local-seo-cta p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact-form-container h2 {
+    color: #014B6F;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.contact-form-container > p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.contact-form-container form {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+    background: white;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #005B96;
+    box-shadow: 0 0 0 3px rgba(0, 91, 150, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #005B96, #003d6b);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 91, 150, 0.3);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #014B6F;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-button {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.faq-button:hover {
+    background: #f8f9fa;
+}
+
+.faq-question {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.faq-icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.faq-icon-line-1,
+.faq-icon-line-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 2px;
+    background: #666;
+    transition: transform 0.3s ease;
+}
+
+.faq-icon-line-2 {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq-button[aria-expanded="true"] .faq-icon-line-2 {
+    transform: rotate(0deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    opacity: 0;
+}
+
+.faq-answer.active {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.faq-answer-content {
+    padding: 0 20px 30px 20px;
+}
+
+.faq-answer-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+}
+
+.faq-answer-content strong {
+    font-weight: 700;
+    color: #014B6F;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .warehouse-hero-section {
+        min-height: 80vh;
+    }
+    
+    .warehouse-content {
+        padding: 20px;
+    }
+    
+    .warehouse-heading h1 {
+        font-size: 2rem;
+    }
+    
+    .warehouse-subtitle p {
+        font-size: 1.1rem;
+    }
+    
+    .warehouse-logo img {
+        max-width: 150px;
+    }
+    
+    .industrial-sp-section,
+    .warehouse-services,
+    .location-section,
+    .warehouse-features,
+    .why-choose-us-section,
+    .local-seo-section,
+    .contact-form-section,
+    .faq-section {
+        padding: 60px 0;
+    }
+    
+    .industrial-sp-container,
+    .warehouse-services-grid,
+    .location-container,
+    .warehouse-features-content,
+    .why-choose-us-container,
+    .local-seo-container,
+    .contact-form-container,
+    .faq-container {
+        padding: 0 15px;
+    }
+    
+    .industrial-sp-content h2,
+    .location-content h2,
+    .features-text h2,
+    .why-choose-us-container h2,
+    .local-seo-container h2,
+    .contact-form-container h2,
+    .faq-container h2 {
+        font-size: 2rem;
+    }
+    
+    .location-container,
+    .warehouse-features-content,
+    .warehouse-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        min-height: auto;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+    }
+    
+    .location-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-image img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .warehouse-heading h1 {
+        font-size: 1.8rem;
+    }
+    
+    .warehouse-subtitle p {
+        font-size: 1rem;
+    }
+    
+    .warehouse-logo img {
+        max-width: 120px;
+    }
+    
+    .industrial-sp-section,
+    .warehouse-services,
+    .location-section,
+    .warehouse-features,
+    .why-choose-us-section,
+    .local-seo-section,
+    .contact-form-section,
+    .faq-section {
+        padding: 40px 0;
+    }
+    
+    .service-card {
+        padding: 25px 15px;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .features-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .features-list li {
+        font-size: 1rem;
+    }
+    
+    .industrial-sp-heading {
+        font-size: 1.8rem;
+    }
+    
+    .lease-options-list p {
+        font-size: 1rem;
+    }
+    
+    .warehouse-description p {
+        font-size: 1rem;
+    }
+    
+    
+    .contact-form-container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-form-container form {
+        padding: 30px 20px;
+    }
+    
+    .faq-container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .faq-button {
+        padding: 15px;
+    }
+    
+    .faq-question {
+        font-size: 1rem;
+    }
+    
+}

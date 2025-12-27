@@ -1,0 +1,595 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.red-text {
+    color: #dc143c;
+}
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+/* Header Fixes */
+.new-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transform: translateY(0) !important;
+    margin-bottom: 200px;
+}
+
+/* Main Content */
+main {
+    margin-top: 80px;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: auto !important;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: #fff;
+    padding: 60px 0;
+    color: #1a1a1a;
+    margin-top: 150px;
+}
+
+.hero-section .logo-section {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-logo {
+    max-width: 400px;
+    height: auto;
+}
+
+.hero-section .content-layout {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-section .image-content {
+    flex: 1;
+}
+
+.hero-section .text-content {
+    flex: 1;
+}
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    color: #1a1a1a;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.hero-cta {
+    margin-top: 40px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #dc143c;
+    color: #fff;
+    padding: 18px 35px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #b0112f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(220, 20, 60, 0.3);
+}
+
+/* Section Styles */
+section {
+    padding: 80px 0;
+    margin-bottom: 0 !important;
+    padding-bottom: 80px !important;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+.section-intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #555;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Why Choose Section */
+.why-choose-section {
+    background: #f8f9fa;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Content Layout */
+.content-layout {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.content-layout.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.section-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Benefits List */
+.benefits-list {
+    margin: 30px 0;
+}
+
+.benefit-item {
+    margin-bottom: 25px;
+}
+
+.benefit-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.benefit-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #dc143c;
+    color: #fff;
+    padding: 18px 35px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #b0112f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(220, 20, 60, 0.3);
+}
+
+/* Kids Taekwondo Section */
+.kids-taekwondo-section {
+    background: #fff;
+}
+
+/* Kids Benefits Cards Section */
+.kids-benefits-section {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+.kids-benefits-section .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.kids-benefits-section .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.kids-benefits-section .section-intro {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.kids-benefits-section .section-subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0;
+}
+
+.benefits-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.benefits-cards-grid .benefit-card {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefits-cards-grid .benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefits-cards-grid .benefit-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.benefits-cards-grid .benefit-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Adult Martial Arts Section */
+.adult-martial-arts-section {
+    background: #f8f9fa;
+}
+
+/* Adult Benefits Cards Section */
+.adult-benefits-section {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.adult-benefits-section .benefits-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Advanced Training Section */
+.advanced-training-section {
+    background: #fff;
+    text-align: center;
+}
+
+/* Location & Contact Section */
+.location-contact-section {
+    background: #f8f9fa;
+}
+
+.contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 50px auto 0;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+
+.contact-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-card ul li {
+    margin-bottom: 15px;
+}
+
+.contact-card ul li a {
+    color: #dc143c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-card ul li a:hover {
+    color: #b81212;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.quick-links, .contact-info {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin: 30px 0;
+    box-shadow: none;
+}
+
+.quick-links h3, .contact-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.quick-links ul {
+    list-style: none;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+
+.quick-links a {
+    color: #dc143c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+    color: #b0112f;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.whatsapp-btn:hover {
+    background: #128c7e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* Footer Section - Uses main styles.css */
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-layout,
+    .hero-section .content-layout {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .content-layout.reverse {
+        flex-direction: column;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .benefits-cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .adult-benefits-section .benefits-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .kids-benefits-section .section-title {
+        font-size: 2rem;
+    }
+    
+    .kids-benefits-section .section-intro {
+        font-size: 1.1rem;
+    }
+    
+    .kids-benefits-section .section-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-image,
+    .hero-image {
+        height: 300px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-logo {
+        max-width: 300px;
+    }
+    
+    .benefits-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .adult-benefits-section .benefits-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-image,
+    .hero-image {
+        height: 250px;
+    }
+    
+    .hero-section,
+    section {
+        padding: 40px 0;
+    }
+    
+    .hero-logo {
+        max-width: 250px;
+    }
+    
+    .hero-button,
+    .cta-button {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# High priority pages for crawling
+Allow: /warehouse-in-sitra/
+Allow: /warehouse.html
+Allow: /contact.html
+Allow: /services.html
+
+# Block access to sensitive files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.log$
+Disallow: /*.bak$
+Disallow: /*.tmp$
+
+# Allow access to CSS and JS files
+Allow: /styles.css
+Allow: /js/
+Allow: /css/
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://zoombahrain.com/sitemap.xml
+
+# Crawl delay (optional - adjust based on server capacity)
+Crawl-delay: 1
