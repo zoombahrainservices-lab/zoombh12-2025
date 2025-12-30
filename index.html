@@ -130,9 +130,12 @@
             <!-- Logo Section -->
             <div class="logo-section">
                 <a href="/" class="logo-link">
-                    <img src="images/zoom-logo.png" 
+                    <img src="zoombh/images/ZOOM LOGO 2025 (1).png" 
                          alt="Zoom Bahrain | Digital Marketing Agency Bahrain | Sales Consultancy Bahrain | Marketing Agency Bahrain | Web Design Agency | Events Management & PR" 
-                         class="logo-img" />
+                         class="logo-img logo-transparent" />
+                    <img src="zoombh/images/ZOOM LOGO 2025 (1).png" 
+                         alt="Zoom Bahrain | Digital Marketing Agency Bahrain | Sales Consultancy Bahrain | Marketing Agency Bahrain | Web Design Agency | Events Management & PR" 
+                         class="logo-img logo-scrolled" />
                 </a>
             </div>
             
@@ -198,20 +201,20 @@
                         <a href="contact/" class="nav-link">Contact</a>
                     </li>
                 </ul>
-                
-                <!-- Social Media Links for Mobile -->
-                <div class="social-section">
-                    <a href="https://www.facebook.com/zoombahrain" target="_blank" class="social-link" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/zoombahrainorg/" target="_blank" class="social-link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="http://instagram.com/zoomrealestate.bh" target="_blank" class="social-link" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
             </nav>
+            
+            <!-- Social Media Links -->
+            <div class="social-section">
+                <a href="https://www.facebook.com/zoombahrain" target="_blank" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/zoombahrainorg/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="http://instagram.com/zoomrealestate.bh" target="_blank" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
             
             <!-- Mobile Menu Button -->
             <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" onclick="toggleMobileMenu()">
@@ -227,29 +230,27 @@
     
     <!-- Hero Section -->
     <section class="hero-section">
-        <!-- Left Side - Text Content -->
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Complete Solutions for <br />
-                <span class="highlighted-text real-estate">Real Estate</span> , Logistics, <br />
-                Business Consulting, Education and <br />
-                <span class="highlighted-text events">Events</span>
-            </h1>
-            
-            <p class="hero-description">
-                Transforming visions into reality since 2008. From finding your ideal property to scaling your business and managing logistics, we've got it all covered.
-            </p>
-            
-            <div class="hero-cta">
-                <a href="#contact" class="btn-primary">Let us help you grow</a>
-            </div>
+        <!-- Full-screen background image -->
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
         </div>
         
-        <!-- Right Side - Diagonal Images -->
-        <div class="hero-images">
-            <div class="img img-1"></div>
-            <div class="img img-2"></div>
-            <div class="img img-3"></div>
+        <!-- Text Content Overlay -->
+        <div class="hero-content">
+            <div class="hero-content-bubble">
+                <h1 class="hero-title">
+                    Complete Solutions for<br>
+                    <span class="highlighted-text real-estate">Real Estate</span> , Logistics,<br>
+                    Business Consulting, Education and<br>
+                    <span class="highlighted-text events">Events</span>
+                </h1>
+                <p class="hero-description">
+                    Transforming visions into reality since 2008. From finding your ideal property to scaling your business and managing logistics, we've got it all covered.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">Let us help you grow</a>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -331,14 +332,14 @@
 
             </div>
             
-            <!-- About Zoom Link -->
+            <!-- About Zoom Link - Above Logo -->
             <div class="about-zoom-link">
-                <a href="#contact">
+                <a href="about/">
                     <span class="link-text">About Zoom</span>
                 </a>
             </div>
             
-            <!-- Zoom Logo Image -->
+            <!-- Zoom Logo Image - Below About Zoom -->
             <div class="zoom-logo-image">
                 <img src="images/Zoom-taking-your-step-furthern.png" 
                      alt="Zoom Taking Your Step Further" 
@@ -481,11 +482,11 @@
                      </figure>
      
                      <figure>
-                         <img
-                             src="images/warehouse-with-mezzanine-office-sp-bahrain.jpg"
-                             alt="Warehouse with mezzanine office and 10 m ceiling"
-                             width="1600" height="720" loading="lazy" decoding="async"
-                         />
+                        <img
+                            src="images/warehouse-with-mezzanine-office-space-bahrain.jpg"
+                            alt="Warehouse with mezzanine office and 10 m ceiling"
+                            width="1600" height="720" loading="lazy" decoding="async"
+                        />
                          <figcaption class="caption">Mezzanine Office &amp; Storage Zone</figcaption>
                      </figure>
                  </div>
@@ -1189,52 +1190,161 @@
     </main>
 
     <!-- Footer Section -->
-    <section class="footer-section" aria-label="Footer - Company Information and Quick Links">
-        <div class="footer-grid">
-            <!-- Google Maps -->
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.123456789!2d50.5899911!3d26.2104951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49b8c8c8c8c8c8%3A0x1234567890abcdef!2s12%2C%20Bldg%2C%20656%20Rd%20No%203625%2C%20Manama%2C%20Bahrain!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s" 
-                        width="100%" 
-                        height="400" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Zoom Bahrain Location Map"
-                        aria-label="Interactive map showing Zoom Bahrain office location at 12, Bldg, 656 Rd No 3625, Manama">
-                </iframe>
+    <footer class="modern-footer" role="contentinfo" aria-label="Footer">
+        <div class="footer-container">
+            <!-- Top Section: Brand, Contact, Social -->
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/Zoom-Group-of-Companies-Bahrain.png" 
+                         alt="Zoom Group of Companies Bahrain Logo" 
+                         width="1738" height="515" 
+                         loading="lazy" 
+                         decoding="async"
+                         class="footer-logo">
+                    <p class="footer-description">Transforming visions into reality since 2008. Complete solutions across Real Estate, Logistics, Business Consulting, Education & Events in Bahrain and GCC region.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-contact-title">Contact Us</h3>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <address>
+                            <strong>12</strong>, Bldg, <strong>656</strong> Rd No <strong>3625</strong>,<br>
+                            Manama, <span class="bahrain-text">The Kingdom of Bahrain</span>
+                        </address>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <div>
+                            <a href="tel:+97338815222">+973 3881 5222</a><br>
+                            <a href="tel:+97338816222">+973 3881 6222</a><br>
+                            <a href="tel:+97339805127">+973 3980 5127</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:info@zoombahrain.co">info@zoombahrain.co</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <div>
+                            <span class="days">Sunday - Thursday</span><br>
+                            <span class="hours-highlight">8:30AM - 5:30PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 class="footer-social-title">Follow Us</h3>
+                    <div class="footer-social-links">
+                        <a href="https://www.facebook.com/zoombahrain" target="_blank" class="footer-social-link" aria-label="Follow us on Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/zoombahrainorg/" target="_blank" class="footer-social-link" aria-label="Follow us on LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="http://instagram.com/zoomrealestate.bh" target="_blank" class="footer-social-link" aria-label="Follow us on Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="footer-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.123456789!2d50.5899911!3d26.2104951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49b8c8c8c8c8c8%3A0x1234567890abcdef!2s12%2C%20Bldg%2C%20656%20Rd%20No%203625%2C%20Manama%2C%20Bahrain!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s" 
+                                width="100%" 
+                                height="200" 
+                                style="border:0; border-radius: 8px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Zoom Bahrain Location Map"
+                                aria-label="Interactive map showing Zoom Bahrain office location">
+                        </iframe>
+                    </div>
+                </div>
             </div>
 
-            <!-- Company Logo -->
-            <div class="company-logo-container">
-                <img src="images/Zoom-Group-of-Companies-Bahrain.png" 
-                     alt="Zoom Group of Companies Bahrain Logo" 
-                     width="1738" height="515" 
-                     loading="lazy" 
-                     decoding="async">
-            </div>
+            <!-- Links Section: Organized into 4 categories -->
+            <div class="footer-links">
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <!-- Company Section -->
+                    <div class="footer-nav-section">
+                        <button class="footer-nav-toggle" aria-expanded="false" aria-controls="footer-company" id="toggle-company" type="button">
+                            <span>Company</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="footer-nav-list" id="footer-company" aria-labelledby="toggle-company">
+                            <li><a href="about/">About Us</a></li>
+                            <li><a href="contact/">Contact</a></li>
+                            <li><a href="contact/">Careers</a></li>
+                            <li><a href="leadership/">Leadership</a></li>
+                            <li><a href="vision/">Vision & Mission</a></li>
+                            <li><a href="timeline/">Timeline</a></li>
+                            <li><a href="gcc-presence/">GCC Presence</a></li>
+                            <li><a href="why-choose-us-events/">Why Choose Us</a></li>
+                        </ul>
+                    </div>
 
-            <!-- Contact Information -->
-            <div class="contact-info">
-                <p class="email"><strong>info@zoombahrain.co</strong></p>
-                <p class="phone-numbers">
-                    <strong>+973 3881 5222</strong><br>
-                    <strong>+973 3881 6222</strong><br>
-                    <strong>+973 3980 5127</strong>
-                </p>
-                <p class="working-hours">
-                    <span class="days">Sunday - Thursday</span><br>
-                    <span class="hours-highlight">8:30AM - 5:30PM</span>
-                </p>
-                <p class="address">
-                    <strong>12</strong>, Bldg, <strong>656</strong> Rd No <strong>3625</strong>,<br>
-                    Manama,<br>
-                    <span class="bahrain-text">The Kingdom of Bahrain</span>
-                </p>
+                    <!-- Services Section -->
+                    <div class="footer-nav-section">
+                        <button class="footer-nav-toggle" aria-expanded="false" aria-controls="footer-services" id="toggle-services" type="button">
+                            <span>Services</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="footer-nav-list" id="footer-services" aria-labelledby="toggle-services">
+                            <li><a href="realestate/">Real Estate</a></li>
+                            <li><a href="realestate/">Commercial & Residential Leasing</a></li>
+                            <li><a href="realestate/">Real Estate Services</a></li>
+                            <li><a href="warehouse/">Warehouse & Safe Storage</a></li>
+                            <li><a href="warehouse/">Warehousing</a></li>
+                            <li><a href="logistics/">Logistics</a></li>
+                            <li><a href="logistics/">Freight Forwarding</a></li>
+                            <li><a href="logistics/">Logistic Services</a></li>
+                            <li><a href="logistics/">Sea and Air Distribution</a></li>
+                            <li><a href="consultancy/">Business Consulting</a></li>
+                            <li><a href="marketing/">Marketing</a></li>
+                            <li><a href="pr/">PR</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Education & Events Section -->
+                    <div class="footer-nav-section">
+                        <button class="footer-nav-toggle" aria-expanded="false" aria-controls="footer-education" id="toggle-education" type="button">
+                            <span>Education & Events</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="footer-nav-list" id="footer-education" aria-labelledby="toggle-education">
+                            <li><a href="education/">Education</a></li>
+                            <li><a href="education/">Bahrain Study Center</a></li>
+                            <li><a href="taekwondo/">Taekwondo</a></li>
+                            <li><a href="taekwondo/">Taekwondo Training</a></li>
+                            <li><a href="adliya-event-hall/">Adliya Event Hall</a></li>
+                            <li><a href="event/">Event Management</a></li>
+                            <li><a href="event/">Event Planner Team</a></li>
+                            <li><a href="event-success/">Event Success Stories</a></li>
+                            <li><a href="event-technology-innovation/">Event Technology Innovation</a></li>
+                            <li><a href="sustainable-inclusive-events/">Sustainable Events</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources Section -->
+                    <div class="footer-nav-section">
+                        <button class="footer-nav-toggle" aria-expanded="false" aria-controls="footer-resources" id="toggle-resources" type="button">
+                            <span>Resources</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="footer-nav-list" id="footer-resources" aria-labelledby="toggle-resources">
+                            <li><a href="white-papers-research/">White Papers & Research</a></li>
+                            <li><a href="case-studies/">Case Studies</a></li>
+                            <li><a href="awards/">Awards</a></li>
+                            <li><a href="blog-insights/">Blog & Insights</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
 
             <!-- Company Entities -->
-            <div class="company-entities">
-                <ul>
+            <div class="footer-entities">
+                <p class="footer-entities-title">Zoom Group of Companies</p>
+                <ul class="footer-entities-list">
                     <li>ZOOM <strong>REAL ESTATE & ADVERTISING</strong> CO. WLL - C.R. 68542-01;</li>
                     <li>ZOOM <strong>CONSULTANCY</strong> W.L.L. - C.R. 68542-02;</li>
                     <li>ZOOM <strong>TECHNOLOGY</strong> W.L.L. - C.R. 68542-03;</li>
@@ -1243,85 +1353,26 @@
                 </ul>
             </div>
 
-
-            <!-- Separator Line -->
-            <div class="separator-line"></div>
-
-            <!-- Quick Links Heading -->
-            <div class="quick-links-heading">
-                <h4><strong>Quick links</strong></h4>
-            </div>
-
-            <!-- Quick Links Columns -->
-            <div class="quick-links-column-1">
-                <ul>
-                    <li><strong>Contact</strong></li>
-                    <li>Team</li>
-                    <li>Careers</li>
-                    <li><strong>Adliya Event Hall</strong></li>
-                    <li>Event Planner Team</li>
-                    <li>Taekwondo</li>
-                    <li>Bahrain Study Center</li>
-                </ul>
-            </div>
-
-            <div class="quick-links-column-2">
-                <ul>
-                    <li><strong>Real Estate</strong></li>
-                    <li>Business Consulting</li>
-                    <li>Logistics</li>
-                    <li>Marketing</li>
-                    <li><strong>Education</strong></li>
-                    <li>Events</li>
-                    <li>PR</li>
-                </ul>
-            </div>
-
-            <div class="quick-links-column-3">
-                <ul>
-                    <li><strong>Commercial & Residential Leasing</strong></li>
-                    <li>Real Estate Services</li>
-                    <li>Warehouse & Safe Storage</li>
-                    <li><strong>Freight forwarding</strong></li>
-                    <li>Logistic Services</li>
-                    <li>Warehousing</li>
-                    <li>Sea and Air Distribution</li>
-                </ul>
-            </div>
-
-            <div class="quick-links-column-4">
-                <ul>
-                    <li><strong>Education</strong></li>
-                    <li>PR & Marketing</li>
-                    <li>Taekwondo Training</li>
-                    <li><strong>Event Management</strong></li>
-                    <li>Event Success Stories</li>
-                    <li>Event Technology Innovation</li>
-                </ul>
-            </div>
-
-            <div class="quick-links-column-5">
-                <ul>
-                    <li><strong>Sustainable Events</strong></li>
-                    <li>GCC Presence</li>
-                    <li>Leadership</li>
-                    <li><strong>Vision</strong></li>
-                    <li>Timeline</li>
-                    <li>Why Choose Us</li>
-                </ul>
-            </div>
-
-            <div class="quick-links-column-6">
-                <ul>
-                    <li><strong>Resources</strong></li>
-                    <li>White Papers & Research</li>
-                    <li>Case Studies</li>
-                    <li><strong>Awards</strong></li>
-                    <li>Blog & Insights</li>
-                </ul>
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                        <span class="copyright-symbol">&copy;</span> 
+                        <span id="current-year">2025</span> Zoom Group of Companies. All rights reserved.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#privacy" class="footer-bottom-link">Privacy Policy</a>
+                        <span class="footer-separator">|</span>
+                        <a href="#terms" class="footer-bottom-link">Terms of Service</a>
+                    </div>
+                    <a href="#main-content" class="footer-back-to-top" aria-label="Back to top">
+                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                        <span>Back to Top</span>
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
+    </footer>
 
      <!-- JavaScript for Mobile Menu and Performance -->
      <script defer>
@@ -1439,6 +1490,44 @@
             });
         });
         
+        
+        // Footer accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const footerToggles = document.querySelectorAll('.footer-nav-toggle');
+            
+            footerToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    const currentSection = this.closest('.footer-nav-section');
+                    
+                    // Close all other sections (accordion behavior)
+                    footerToggles.forEach(otherToggle => {
+                        if (otherToggle !== this) {
+                            otherToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                    
+                    // Toggle current section
+                    this.setAttribute('aria-expanded', !isExpanded);
+                });
+                
+                // Keyboard navigation support
+                toggle.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+        });
+        
+        // Update current year
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        });
         
         // Performance monitoring
         window.addEventListener('load', () => {
@@ -1563,7 +1652,7 @@
             const nav = document.querySelector('.main-nav');
             const toggle = document.querySelector('.mobile-menu-toggle');
             
-            if (window.innerWidth > 768) {
+            if (window.innerWidth > 1059) {
                 nav.classList.remove('active');
                 toggle.classList.remove('active');
             }
@@ -1626,6 +1715,56 @@
         
         // Run periodically as a fallback
         setInterval(enforceHeaderPosition, 1000);
+        
+        // ============================================
+        // NAVBAR SCROLL EFFECT & PARALLAX
+        // ============================================
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('.new-header');
+            const heroBackground = document.querySelector('.hero-background');
+            const heroSection = document.querySelector('.hero-section');
+            
+            if (!header) return;
+            
+            // Function to handle scroll
+            function handleScroll() {
+                const scrollY = window.scrollY || window.pageYOffset;
+                const heroHeight = heroSection ? heroSection.offsetHeight : 600;
+                
+                // Add/remove scrolled class based on scroll position
+                if (scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                
+                // Parallax effect for hero background
+                if (heroBackground && scrollY < heroHeight) {
+                    // Parallax: move background slower than scroll
+                    const parallaxSpeed = 0.5;
+                    const yPos = -(scrollY * parallaxSpeed);
+                    heroBackground.style.transform = `translate3d(0, ${yPos}px, 0)`;
+                }
+            }
+            
+            // Throttle scroll events for better performance
+            let ticking = false;
+            function requestTick() {
+                if (!ticking) {
+                    requestAnimationFrame(function() {
+                        handleScroll();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }
+            
+            // Listen to scroll events
+            window.addEventListener('scroll', requestTick, { passive: true });
+            
+            // Initial call
+            handleScroll();
+        });
     </script>
 </body>
 </html>
