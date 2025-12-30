@@ -130,9 +130,12 @@
             <!-- Logo Section -->
             <div class="logo-section">
                 <a href="/" class="logo-link">
-                    <img src="zoombh/images/ZoomLogo.jpeg" 
+                    <img src="zoombh/images/ZOOM LOGO 2025 (1).png" 
                          alt="Zoom Bahrain | Digital Marketing Agency Bahrain | Sales Consultancy Bahrain | Marketing Agency Bahrain | Web Design Agency | Events Management & PR" 
-                         class="logo-img" />
+                         class="logo-img logo-transparent" />
+                    <img src="zoombh/images/ZOOM LOGO 2025 (1).png" 
+                         alt="Zoom Bahrain | Digital Marketing Agency Bahrain | Sales Consultancy Bahrain | Marketing Agency Bahrain | Web Design Agency | Events Management & PR" 
+                         class="logo-img logo-scrolled" />
                 </a>
             </div>
             
@@ -227,29 +230,27 @@
     
     <!-- Hero Section -->
     <section class="hero-section">
-        <!-- Left Side - Text Content -->
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Complete Solutions for <br />
-                <span class="highlighted-text real-estate">Real Estate</span> , Logistics, <br />
-                Business Consulting, Education and <br />
-                <span class="highlighted-text events">Events</span>
-            </h1>
-            
-            <p class="hero-description">
-                Transforming visions into reality since 2008. From finding your ideal property to scaling your business and managing logistics, we've got it all covered.
-            </p>
-            
-            <div class="hero-cta">
-                <a href="#contact" class="btn-primary">Let us help you grow</a>
-            </div>
+        <!-- Full-screen background image -->
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
         </div>
         
-        <!-- Right Side - Diagonal Images -->
-        <div class="hero-images">
-            <div class="img img-1"></div>
-            <div class="img img-2"></div>
-            <div class="img img-3"></div>
+        <!-- Text Content Overlay -->
+        <div class="hero-content">
+            <div class="hero-content-bubble">
+                <h1 class="hero-title">
+                    Complete Solutions for<br>
+                    <span class="highlighted-text real-estate">Real Estate</span> , Logistics,<br>
+                    Business Consulting, Education and<br>
+                    <span class="highlighted-text events">Events</span>
+                </h1>
+                <p class="hero-description">
+                    Transforming visions into reality since 2008. From finding your ideal property to scaling your business and managing logistics, we've got it all covered.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">Let us help you grow</a>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -1714,6 +1715,56 @@
         
         // Run periodically as a fallback
         setInterval(enforceHeaderPosition, 1000);
+        
+        // ============================================
+        // NAVBAR SCROLL EFFECT & PARALLAX
+        // ============================================
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('.new-header');
+            const heroBackground = document.querySelector('.hero-background');
+            const heroSection = document.querySelector('.hero-section');
+            
+            if (!header) return;
+            
+            // Function to handle scroll
+            function handleScroll() {
+                const scrollY = window.scrollY || window.pageYOffset;
+                const heroHeight = heroSection ? heroSection.offsetHeight : 600;
+                
+                // Add/remove scrolled class based on scroll position
+                if (scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                
+                // Parallax effect for hero background
+                if (heroBackground && scrollY < heroHeight) {
+                    // Parallax: move background slower than scroll
+                    const parallaxSpeed = 0.5;
+                    const yPos = -(scrollY * parallaxSpeed);
+                    heroBackground.style.transform = `translate3d(0, ${yPos}px, 0)`;
+                }
+            }
+            
+            // Throttle scroll events for better performance
+            let ticking = false;
+            function requestTick() {
+                if (!ticking) {
+                    requestAnimationFrame(function() {
+                        handleScroll();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }
+            
+            // Listen to scroll events
+            window.addEventListener('scroll', requestTick, { passive: true });
+            
+            // Initial call
+            handleScroll();
+        });
     </script>
 </body>
 </html>
